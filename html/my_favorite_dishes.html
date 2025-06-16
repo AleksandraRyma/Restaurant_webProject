@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite Dishes</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/our_menu.css" />
+    <link rel="stylesheet" href="/css/my_favorite_dishes.css" />
+  </head>
+  <body>
+    <header class="first-container">
+      <div class="rectangle-orange">Call - 123 456 789</div>
+      <div class="emblem">
+        <img src="/resources/IMAGE.svg" alt="эмблема" />
+      </div>
+      <button class="reservation">
+        <a href="/5_lab/5_lab.html"> Reservation</a>
+      </button>
+    </header>
+    <hr class="divider" />
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="/index.html">Home</a></li>
+        <li class="nav-item"><a href="#footer-container">About Us</a></li>
+        <li class="nav-item active">
+          <a href="/html/our_menu.html">Our Menu</a>
+        </li>
+        <li class="nav-item"><a href="#">Pages</a></li>
+        <li class="nav-item"><a href="#">Blog</a></li>
+        <li class="nav-item"><a href="http://localhost:3000">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="main-datail">
+      <h2 class="main-title">Избранные блюда</h2>
+      <div class="datail-wrapper" id="favoritesList"></div>
+    </div>
+    <div id="totalPrice" class="total-price"></div>
+    <div class="sale-wrapper">
+      <div id="dailyDeal" class="deal-card" style="display: none">
+        <h2>
+          <span id="flame-emoji">🔥</span> Блюдо дня!
+          <span id="flame-emoji">🔥</span>
+        </h2>
+        <img id="deal-img" src="" alt="deal" />
+        <h3 id="deal-name"></h3>
+        <p>
+          <s id="deal-old-price"></s> →
+          <strong id="deal-new-price"></strong>
+        </p>
+        <p id="deal-timer" style="color: red"></p>
+      </div>
+    </div>
+
+    <p id="deal-timer" style="color: red"></p>
+    <script src="/js/my_favorite_dishes.js"></script>
+  </body>
+</html>

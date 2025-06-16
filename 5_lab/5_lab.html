@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Управление бронированиями</title>
+    <link rel="stylesheet" href="/5_lab/5_lab.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/resources/emblema_photoshoppsd.png"
+    />
+  </head>
+  <body>
+    <header class="first-container">
+      <div class="rectangle-orange">Call - 123 456 789</div>
+      <div class="emblem">
+        <img src="/resources/IMAGE.svg" alt="эмблема" />
+      </div>
+      <button id="go-back" class="reservation">
+        <a href="/index.html">Return to home</a>
+      </button>
+    </header>
+    <div class="container">
+      <h1>Управление бронированиями</h1>
+
+      <form id="form">
+        <label
+          >Имя клиента:
+          <input
+            type="text"
+            id="clientName"
+            required
+            placeholder="Введите имя клиента"
+        /></label>
+        <span id="error-message_name" class="error"
+          >Некорректный ввод. Пожалуйста, используйте только буквы алфавита </span
+        ><br />
+        <label
+          >Номер телефона:
+          <input
+            type="tel"
+            id="phone"
+            maxlength="13"
+            required
+            value="+" /></label
+        ><span id="error-message" class="error"
+          >Некорректный ввод. Пожалуйста, введите только цифры после знака
+          '+'</span
+        ><br />
+        <div>
+          <label>Дата бронирования:</label>
+          <input type="date" id="bookingDate" required />
+        </div>
+        <div>
+          <label>Время бронирования:</label>
+          <input type="time" id="bookingTime" required />
+        </div>
+        <label
+          >Количество человек:
+          <input
+            type="number"
+            id="guestCount"
+            required
+            placeholder="Введите количество человек"
+            min="1" /></label
+        ><br />
+        <button type="button" id="add-btn">Добавить запись</button>
+        <button type="button" id="clear-btn">Очистить форму</button>
+        <button type="button" id="clear-table-btn">Очистить всю таблицу</button>
+      </form>
+
+      <h2>Удалить запись</h2>
+      <label
+        >ID:
+        <select id="id-select"></select
+      ></label>
+      <button id="delete-btn">Удалить запись</button>
+
+      <h2>Клиенты</h2>
+      <button id="show-customers-btn">
+        Показать клиентов с макс. и мин. количеством человек
+      </button>
+      <div id="customer-info" style="margin-top: 20px" class="my_exper"></div>
+
+      <h2>Добавить новое свойство</h2>
+      <label
+        >ID:
+        <select id="property-id-select"></select
+      ></label>
+      <label>Свойство: <input type="text" id="property-name" /></label>
+      <label>Значение: <input type="text" id="property-value" /></label>
+      <button type="button" id="add-property-btn">Добавить свойство</button>
+
+      <h2>Бронирования</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Имя клиента</th>
+            <th>Номер телефона</th>
+            <th>Дата и время</th>
+            <th>Количество человек</th>
+            <th>Доп. свойства</th>
+          </tr>
+        </thead>
+        <tbody id="booking-table-body"></tbody>
+      </table>
+    </div>
+
+    <script src="/5_lab/5_lab.js"></script>
+  </body>
+</html>

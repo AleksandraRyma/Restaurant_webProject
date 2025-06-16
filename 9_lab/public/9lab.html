@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Связаться с нами</title>
+    <link rel="stylesheet" href="/9style.css" />
+    <link rel="stylesheet" href="9style.css" />
+    <link rel="stylesheet" href="/9_lab/public/9style.css" />
+  </head>
+  <body>
+    <header class="first-container">
+      <div class="rectangle-orange">Call - 123 456 789</div>
+    </header>
+    <hr class="divider" />
+    <header>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/index.html">Home</a>
+          </li>
+          <li class="nav-item"><a href="#footer-container">About Us</a></li>
+          <li class="nav-item"><a href="/html/our_menu.html">Our Menu</a></li>
+          <li class="nav-item"><a href="#">Pages</a></li>
+          <li class="nav-item"><a href="#">Blog</a></li>
+          <li class="nav-item active">
+            <a href="/9_lab/public/9lab.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="title-container">
+        <h1>Свяжитесь с нами</h1>
+        <p>Мы будем рады получить ваш отзыв о посещении нашего ресторана!</p>
+      </div>
+
+      <form action="/submit" method="POST">
+        <label>Имя: <input type="text" name="name" required /></label
+        ><br /><br />
+        <label>Email: <input type="email" name="email" required /></label
+        ><br /><br />
+        <label
+          >Ваш отзыв:<br />
+          <textarea
+            name="message"
+            rows="5"
+            cols="30"
+            required
+          ></textarea></label
+        ><br /><br />
+        <button type="submit" class="keyButton" id="startBtn">
+          <span class="button-text">Отправить</span>
+        </button>
+      </form>
+
+      <br />
+      <a href="/messages" class="butHref">Посмотреть отзывы</a>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/our_menu.css" />
+  </head>
+  <body>
+    <header class="first-container">
+      <div class="rectangle-orange">Call - 123 456 789</div>
+      <div class="emblem">
+        <img src="/resources/IMAGE.svg" alt="эмблема" />
+      </div>
+      <button class="reservation">
+        <a href="/5_lab/5_lab.html"> Reservation</a>
+      </button>
+    </header>
+    <hr class="divider" />
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="/index.html">Home</a></li>
+        <li class="nav-item"><a href="#footer-container">About Us</a></li>
+        <li class="nav-item active"><a href="#">Our Menu</a></li>
+        <li class="nav-item"><a href="#">Pages</a></li>
+        <li class="nav-item"><a href="#">Blog</a></li>
+        <li class="nav-item"><a href="http://localhost:3000">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="slider">
+      <div class="list">
+        <div class="item">
+          <img src="/dishes_menu/1.png" />
+        </div>
+        <div class="item active">
+          <img src="/dishes_menu/2.png" />
+        </div>
+        <div class="item">
+          <img src="/dishes_menu/3.png" />
+        </div>
+        <div class="item">
+          <img src="/dishes_menu/4.png" />
+        </div>
+        <div class="item">
+          <img src="/dishes_menu/5.png" />
+        </div>
+      </div>
+      <div class="circle">
+        THE TASTEAT RESTAURANT MENU - Delight in culinary artistry and unique
+        dishes!
+      </div>
+      <div class="content">
+        <div>menu</div>
+        <div>restaurant</div>
+      </div>
+      <div class="arow">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+    </div>
+
+    <!-- list of food menu -->
+    <div class="main-datail">
+      <h2 class="main-title">MENU</h2>
+      <div class="menu-controls">
+        <input type="text" id="search" placeholder="Search dish" />
+        <select id="category">
+          <option value="all">All Categories</option>
+          <option value="chicken">Chicken</option>
+          <option value="drinks">Drinks</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="fast-food">Fast Food</option>
+        </select>
+        <select id="sortOrder">
+          <option value="none">Без сортировки</option>
+          <option value="asc">По возрастанию цены</option>
+          <option value="desc">По убыванию цены</option>
+        </select>
+      </div>
+      <div class="datail-wrapper">
+        <!-- куда вставляюися картирнки -->
+      </div>
+    </div>
+    <hr class="divider" />
+    <div class="wrapper-go-to-favor-disher">
+      <a href="/html/my_favorite_dishes.html">
+        <button class="see-all-dishes-btn">Перейти на вкладку избранное</button>
+      </a>
+    </div>
+    <hr class="divider" />
+    <div class="footer-container" id="footer-container">
+      <div class="emblem-footer">
+        <h2>#TheTastEat</h2>
+        <img src="/resources/emblem.png" alt="emblem" />
+      </div>
+      <div class="contact-information-footer">
+        <div class="contact-container">
+          <div class="rectangle-contact">Contact</div>
+          <h3>5 Rue Dalou, 75015 Paris</h3>
+          <p>+123 456 789</p>
+          <p>josefin@mail.com</p>
+        </div>
+        <div class="email-container">
+          <h3>Join our mailing list for updates,</h3>
+          <h3>Get news & offers events.</h3>
+          <div class="subscribe-container">
+            <input
+              type="email"
+              placeholder="Email"
+              class="subscribe-input"
+              required
+            />
+            <button class="subscribe-btn">Subscribe</button>
+          </div>
+        </div>
+        <div class="working-hours-container">
+          <div class="rectangle-working-hour">WORKING HOURS</div>
+          <div class="working-hours">
+            <p>Mon - Fri: 7.00am - 6.00pm</p>
+            <p>Sat: 7.00am - 6.00pm</p>
+            <p>Sun: 8.00am - 6.00pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/our_menu.js"></script>
+  </body>
+</html>
